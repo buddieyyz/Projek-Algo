@@ -87,8 +87,6 @@ def menu_admin(username):
         print("7. Cari Barang")
         print("8. Logout")
         pilihan = input("\nPilih menu (1-8): ").strip()
-        print("7. Logout")
-        pilihan = input("\nPilih menu (1-7): ").strip()
         if pilihan == "1":
             tampilkan_inventaris()
         elif pilihan == "2":
