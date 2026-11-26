@@ -29,6 +29,7 @@ daftar_peminjaman = [
         "status": "Dipinjam"
     }
 ]
+
 # menampilkan header untuk setiap menu
 def tampilkan_header(judul):
     print("=" * 60)
@@ -87,6 +88,7 @@ def menu_admin(username):
         print("7. Cari Barang")
         print("8. Logout")
         pilihan = input("\nPilih menu (1-8): ").strip()
+        
         if pilihan == "1":
             tampilkan_inventaris()
         elif pilihan == "2":
@@ -100,8 +102,10 @@ def menu_admin(username):
         elif pilihan == "6":
             konfirmasi_peminjaman()
         elif pilihan == "7":
+
             cari_barang()
         elif pilihan == "8":
+
             print("\nLogout berhasil. Keluar dari Panel Admin...")
             break
         else:
